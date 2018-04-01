@@ -1,0 +1,1 @@
+sapply(df,class)
