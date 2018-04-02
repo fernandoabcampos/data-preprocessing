@@ -16,19 +16,3 @@ df$GC <- as.numeric(gsub(",", ".", df$GC))
 df$Generosity <- as.numeric(gsub(",", ".", df$Generosity))
 df$DR <- as.numeric(gsub(",", ".", df$DR))
 
-
-
-drops <- c("LE2","Family2","GC2","Freedom2","Generosity2","DR2")
-df <- df[ , !(names(df) %in% drops)]
-
-
-
-
-
-
-
-
-
-
-
-HS2

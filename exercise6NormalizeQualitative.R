@@ -1,5 +1,5 @@
 
-
+library(stringr)
 
 region_table <- table(gsub("AFRCA", "AFRICA", trimws(gsub("\\s+", " ", df$Region))))
 region_table

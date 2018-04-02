@@ -15,3 +15,10 @@ df2[df2$Lower.Confidence.Interval > df2$Upper.Confidence.Interval, c("Lower.Conf
 
 df[df$LCI > df$UCI, c("LCI", "UCI")] <- df[df$LCI > df$UCI, c("UCI", "LCI")]
 
+# Creating index HR based of read position 
+head(df)
+library(plyr)
+arrange(df, desc(df$HS))
+df$HR <- row(df)
+
+
